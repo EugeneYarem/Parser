@@ -96,7 +96,7 @@ void parser_xml (int &Answer, user &search) {
             }
         }
 
-        if(buf == "</base>")
+        if(buf == tags[0])
             break;
     }
 
