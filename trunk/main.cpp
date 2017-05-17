@@ -1,5 +1,3 @@
-//hello
-//hello
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -47,6 +45,7 @@ void check (int &Answer, user &search, vector<user> &data) {
     }
 }
 
+//Pavlenko wrote
 void parser_xml (int &Answer, user &search) {
     vector<user> write; //запись всех пользователей
     string buf; // буффер для строки файла
