@@ -117,10 +117,10 @@ void Menu (int &Answer, user &find) {
     cin.ignore(); // игнорируем значение в потоке ввода, чтобы вводить строку
     system("cls");
     if (Answer == 1) {
-        cout << "Enter the request: ";
-        getline(cin, find.request);
         cout << endl << "Enter the tag, like <name>: ";
         getline(cin, find.tag);
+        cout << "Enter the request: ";
+        getline(cin, find.request);
     }
 }
 
