@@ -7,7 +7,7 @@
 #include <fstream>
 
 using namespace std;
-//Yaremchenko
+//Yaremchenko start
 struct user { //хранение данных файла в структуре
     string tag;
     string request;
@@ -44,8 +44,8 @@ void check (int &Answer, user &search, vector<user> &data) {
     }
     }
 }
-
-//Pavlenko
+//Yaremchenko end
+//Pavlenko start
 void parser_xml (int &Answer, user &search) {
     vector<user> write; //запись всех пользователей
     string buf; // буффер для строки файла
@@ -101,7 +101,8 @@ void parser_xml (int &Answer, user &search) {
 
     base.close(); //закрываем файл
 }
-//Yaremchenko
+//Pavlenko end
+//Yaremchenko start
 void Menu (int &Answer, user &find) {
     cout << "Choose what you want to find: ";
     cout << endl << "1 - by tag";
@@ -151,3 +152,4 @@ int main() {
         }
     }
 }
+//Yaremchenko end
