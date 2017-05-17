@@ -70,6 +70,8 @@ void parser_xml (int &Answer, user &search) {
 
                 if(buf2[1] == '/') {//если тег закрытия - удаляем из вектора
                     buf2.erase(1, 1);
+                    if(buf == tags[0])
+                        break;
                     if(tags[tags.size() - 1] == buf2) //если последний открытый тег равен закрывающему - удаляем из вектора
                         tags.erase(tags.end());
                     else { //не закрыли - ошибка и выход из программы
@@ -95,9 +97,6 @@ void parser_xml (int &Answer, user &search) {
                 write.push_back(buffer);
             }
         }
-
-        if(buf == tags[0])
-            break;
     }
 
     base.close(); //закрываем файл
