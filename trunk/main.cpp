@@ -70,7 +70,7 @@ void parser_xml (int &Answer, user &search) {
 
                 if(buf2[1] == '/') {//если тег закрытия - удаляем из вектора
                     buf2.erase(1, 1);
-                    if(buf == tags[0])
+                    if(buf2 == tags[0])
                         break;
                     if(tags[tags.size() - 1] == buf2) //если последний открытый тег равен закрывающему - удаляем из вектора
                         tags.erase(tags.end());
